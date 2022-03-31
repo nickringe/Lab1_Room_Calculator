@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class room_detail_generator {
+	
+	public static void main(String[] args) {
+		char cont;
+		do {
+		
+		System.out.println("Welcome to Grand Circus' Room Detail Generator!");
+		System.out.println("");
+		Scanner scnr = new Scanner(System.in);
+		System.out.println("Enter Length in feet: ");
+		double length = scnr.nextDouble();
+		System.out.println("Enter Width in feet: ");
+		double width = scnr.nextDouble();
+		System.out.println("Enter Height in feet: ");
+		double height = scnr.nextDouble();
+		System.out.println("Area: " + (length * width) + " square feet");
+		System.out.println("Perimeter: " + (length + length + width + width) + " feet");
+		System.out.println("Volume: " + (length * width * height) + " cubic feet");
+		System.out.println("Would you like to continue? y/n: ");
+		
+		Scanner scnr2 = new Scanner(System.in);
+		cont = scnr2.next().charAt(0);
+		
+		scnr2.close();
+		} while (cont == 'Y' || cont == 'y');
+		
+		System.out.println("End Program");
+		
+	}
+
+}

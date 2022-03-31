@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class room_detail_generator {
+
+	public static void main(String[] args) {
+		System.out.println("Welcome to Grand Circus' Room Detail Generator!");
+		System.out.println("");
+		Scanner scnr = new Scanner(System.in);
+		System.out.println("Enter Length: ");
+		double length = scnr.nextDouble();
+		System.out.println("Enter Width: ");
+		double width = scnr.nextDouble();
+		System.out.println("Area: " + (length * width));
+		
+
+	}
+
+}
